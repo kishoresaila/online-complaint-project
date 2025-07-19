@@ -1,0 +1,240 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: #FFFDE7;
+}
+
+.App {
+   max-width: 100%;
+   background-color: #FFF9C4;
+}
+
+ul {
+   display: flex;
+   list-style: none;
+   flex-direction: row;
+   justify-content: space-around;
+   background-color: #FF7043;
+   padding: 10px 0;
+}
+
+ul li, .navigate p, .nav-item p {
+   color: white;
+   font-weight: bold;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.nav-item p:hover {
+   color: #FFEB3B;
+}
+
+.container {
+   margin: 20px;
+}
+
+.home-container {
+   width: 100vw;
+   height: 88vh;
+   display: flex;
+   background-color: #E1F5FE;
+}
+
+.left-side,
+.right-side {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.left-side img {
+   width: 85%;
+   height: auto;
+   border-radius: 12px;
+   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.right-side {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+span {
+   font-family: 'Segoe UI', sans-serif;
+}
+
+.f-letter {
+   font-size: 3em;
+   color: #0288D1;
+}
+
+.s-letter {
+   font-size: 1.6em;
+   color: #F57F17;
+}
+
+.t-letter {
+   font-size: 1.3em;
+   color: #43A047;
+}
+
+/* 🔵 General Button Styling */
+.btn {
+   padding: 10px 22px;
+   margin: 10px;
+   border: none;
+   border-radius: 30px;
+   font-size: 16px;
+   font-weight: bold;
+   color: white;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 🔷 Operation-specific Buttons */
+.btn-login {
+   background-color: #29B6F6;
+}
+
+.btn-signup {
+   background-color: #66BB6A;
+}
+
+.btn-register {
+   background-color: #FFA726;
+}
+
+.btn:hover {
+   opacity: 0.85;
+   transform: scale(1.05);
+}
+
+.container .form {
+   width: 100%;
+   background-color: #FFF3E0;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.data {
+   width: auto;
+   padding: 12px;
+   border: 2px dashed #FFB74D;
+   background-color: #FFECB3;
+   border-radius: 12px;
+}
+
+.complaint-box {
+   position: relative;
+   margin-top: 10px;
+   width: 100%;
+}
+
+.compliant-form {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   padding: 25px;
+   border-radius: 10px;
+   background-color: #E8F5E9;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   gap: 1.5rem;
+}
+
+.chat-container {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   background-color: #FFF8E1;
+   border-radius: 12px;
+   padding: 15px;
+}
+
+.chat-container h1 {
+   font-size: 22px;
+   text-align: center;
+   color: #E65100;
+   margin-bottom: 15px;
+}
+
+.message-window {
+   flex: 1;
+   overflow-y: auto;
+   padding: 12px;
+   background-color: #FFFFFF;
+   border: 1px solid #FFE082;
+   border-radius: 8px;
+}
+
+.message {
+   background-color: #E1F5FE;
+   padding: 10px;
+   margin-bottom: 8px;
+   border-left: 5px solid #29B6F6;
+   border-radius: 5px;
+}
+
+.input-container {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   margin-top: 12px;
+}
+
+.input-container textarea {
+   flex: 1;
+   padding: 8px;
+   border: 2px solid #B2EBF2;
+   border-radius: 8px;
+   background-color: #F1F8E9;
+}
+
+.input-container button {
+   padding: 8px 16px;
+   background-color: #00ACC1;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   margin-left: 10px;
+   font-weight: bold;
+}
+
+.accordian, .body {
+   min-height: 70vh;
+   padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+   .home-container {
+      flex-direction: column;
+   }
+
+   .left-side,
+   .right-side {
+      width: 100%;
+   }
+
+   .chat-container {
+      height: auto;
+   }
+
+   .grid-container {
+      display: block;
+   }
+}
